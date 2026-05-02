@@ -19,13 +19,13 @@ class DatabaseSeeder extends Seeder
             $movieIds = $this->seedMovies();
 
             $this->seedMovieGenres($movieIds, $genreIds);
-            $this->seedMoviePeople($movieIds, $peopleIds, $roleIds);
+            $this->seedCast($movieIds, $peopleIds, $roleIds);
         });
     }
 
     private function resetTables(): void
     {
-        DB::table('movie_person')->delete();
+        DB::table('cast')->delete();
         DB::table('genre_movie')->delete();
         DB::table('movies')->delete();
         DB::table('people')->delete();
@@ -600,7 +600,7 @@ class DatabaseSeeder extends Seeder
                 'gender' => $faker->randomElement(['M', 'F', 'O', 'U']),
                 'date_of_birth' => $faker->dateTimeBetween('-70 years', '-18 years')->format('Y-m-d'),
                 'nationality' => $faker->randomElement($nationalities),
-                'url_image' => null,
+                'url_image' => 'storage/images/people/Default_Img.png',
             ];
         }
 
@@ -759,11 +759,11 @@ class DatabaseSeeder extends Seeder
         }
     }
 
-    private function seedMoviePeople(array $movieIds, array $peopleIds, array $roleIds): void
+    private function seedCast(array $movieIds, array $peopleIds, array $roleIds): void
     {
         $now = now();
 
-        $moviePeople = [
+        $cast = [
             'inception' => [
                 ['person' => 'christopher_nolan', 'role' => 'Regista'],
                 ['person' => 'leonardo_dicaprio', 'role' => 'Protagonista'],
@@ -873,10 +873,10 @@ class DatabaseSeeder extends Seeder
             ],
         ];
 
-        foreach ($moviePeople as $movieKey => $assignments) {
+        foreach ($cast as $castKey => $assignments) {
             foreach ($assignments as $assignment) {
-                DB::table('movie_person')->insert([
-                    'movie_id' => $movieIds[$movieKey],
+                DB::table('cast')->insert([
+                    'movie_id' => $movieIds[$castKey],
                     'person_id' => $peopleIds[$assignment['person']],
                     'role_id' => $roleIds[$assignment['role']],
                     'created_at' => $now,

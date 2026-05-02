@@ -10,7 +10,7 @@ use App\Models\Role;
 class MoviePerson extends Pivot
 {
 
-    protected $table = 'movie_person';
+    protected $table = 'cast';
 
     public $incrementing = true;
 

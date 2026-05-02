@@ -3,11 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Models\MoviePerson;
+use App\Models\Cast;
 
 class Role extends Model
 {
     public function moviePeople(){
-        return $this->hasMany(MoviePerson::class);
+        return $this->hasMany(Cast::class);
     }
 }
