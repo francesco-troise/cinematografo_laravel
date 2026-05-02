@@ -23,13 +23,13 @@
 </head>
 
 <body>
-    <div id="app" class="bg-light min-vh-100"> <!-- Sfondo grigio chiarissimo tecnico -->
+    <div id="app" class="bg-light min-vh-100">
 
-        <!-- Navbar: Passiamo a navbar-dark con bg-dark per un look "Terminal/Code" più moderno -->
+
         <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-lg py-2">
             <div class="container">
 
-                <!-- Logo e Testo aggiornati -->
+
                 <a class="navbar-brand d-flex align-items-center fw-bold text-uppercase tracking-wider"
                     href="{{ url('/') }}">
                     <div class="logo_laravel me-2" style="height: 50px; width: 50px;">
@@ -65,7 +65,7 @@
                                 <li class="nav-item ms-md-2">
                                     <a class="btn btn-primary rounded-pill px-4 shadow-sm fw-bold"
                                         href="{{ route('register') }}">
-                                        {{ __('Get Started') }}
+                                        {{ __('Registrati') }}
                                     </a>
                                 </li>
                             @endif
@@ -79,7 +79,7 @@
 
                                 <div class="dropdown-menu dropdown-menu-end border-0 shadow-lg mt-2 p-2 rounded-4"
                                     aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item rounded-3 py-2" href="{{ url('index') }}">
+                                    <a class="dropdown-item rounded-3 py-2" href="{{ route('movie.index') }}">
                                         <i class="bi bi-speedometer2 me-2 text-primary"></i>{{ __('Dashboard') }}
                                     </a>
                                     <a class="dropdown-item rounded-3 py-2" href="{{ url('profile') }}">
@@ -102,7 +102,7 @@
             </div>
         </nav>
 
-        <!-- Main content con padding e animazione fade-in ideale -->
+
         <main class="py-5 container">
             <div class="row justify-content-center">
                 <div class="col-12">

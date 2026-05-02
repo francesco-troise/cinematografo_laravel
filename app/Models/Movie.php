@@ -19,4 +19,17 @@ class Movie extends Model
                     ->withPivot('role_id')
                     ->withTimestamps();
     }
+
+    public function getDirector(){
+        return $this->people->where('pivot.role_id', 1)->first();
+    }
+
+    public function getDirectorName(){
+      $director = $this->getDirector();
+      return $director->name . " " . $director->last_name ;
+    }
+
+    public function getGenres(){
+      return $this->genres->pluck('name')->implode(', ');
+    }
 }
