@@ -4,7 +4,7 @@
     <div class="jumbotron p-5 mb-4 bg-dark text-white rounded-5 shadow-lg border border-secondary border-opacity-25 mt-4">
         <div class="container py-5">
             <div class="d-flex align-items-center mb-4">
-                <!-- Badge in stile "Ticker" di borsa -->
+
                 <span
                     class="badge rounded-pill bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 px-3 py-2 fw-bold shadow-sm">
                     <i class="bi bi-graph-up-arrow me-1"></i> MARKET OPEN: 2.540 FILMS
@@ -21,13 +21,13 @@
                 Dati in tempo reale, statistiche avanzate e proiezioni di visione per il cinefilo moderno.
             </p>
 
-            <!-- Bottoni in stile "Trading Platform" -->
+
             <div class="d-flex flex-wrap gap-3">
-                <a href="#"
+                <a href="{{ route('dashboard') }}"
                     class="btn btn-primary btn-lg rounded-pill px-5 py-3 fw-bold shadow-lg d-flex align-items-center border-0">
                     <i class="bi bi-grid-1x2-fill me-2"></i> OPEN DASHBOARD
                 </a>
-                <a href="#"
+                <a href="{{ url('profile') }}"
                     class="btn btn-outline-light btn-lg rounded-pill px-5 py-3 fw-bold d-flex align-items-center border-opacity-25">
                     <i class="bi bi-person-bounding-box me-2"></i> VIEW PROFILE
                 </a>

@@ -44,7 +44,7 @@
                                         <div class="d-flex justify-content-end gap-2">
                                             <a href="{{ route('movie.edit', $movie) }}"
                                                 class="btn btn-warning btn-sm shadow-sm d-inline-flex align-items-center">
-                                                <i class="bi bi-pencil me-1"></i> Modifica progetto
+                                                <i class="bi bi-pencil me-1"></i> Modifica film
                                             </a>
 
                                             <form action="{{ route('movie.destroy', $movie) }}" method="POST"
@@ -54,7 +54,7 @@
                                                 <button type="submit"
                                                     class="btn btn-danger btn-sm shadow-sm d-inline-flex align-items-center"
                                                     onclick="return confirm('Sei sicuro di voler eliminare questo progetto?')">
-                                                    <i class="bi bi-trash me-1"></i> Elimina progetto
+                                                    <i class="bi bi-trash me-1"></i> Elimina film
                                                 </button>
                                             </form>
                                         </div>

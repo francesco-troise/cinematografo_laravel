@@ -49,7 +49,7 @@
                     <!-- Left Side -->
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link px-3 fw-semibold active" href="{{ url('/') }}">
+                            <a class="nav-link px-3 fw-semibold active" href="{{ route('dashboard') }}">
                                 <i class="bi bi-house-door me-1"></i> {{ __('Home') }}
                             </a>
                         </li>
