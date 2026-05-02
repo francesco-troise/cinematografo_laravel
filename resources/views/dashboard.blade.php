@@ -2,13 +2,26 @@
 @section('title', 'Dashboard')
 
 @section('content')
+    <style>
+        .hover-lift {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-10px);
+
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+
+        }
+    </style>
+
     <div class="container-fluid py-4">
         <div class="row g-4">
 
             <!--INDEX SECTION-->
             <section class="col-12 col-lg-6">
                 <a href="{{ route('movie.index') }}" class="text-decoration-none">
-                    <div class="card h-100 shadow-sm border-0 rounded-4">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 hover-lift">
                         <div class="card-header bg-transparent border-0 pt-4 pb-0">
                             <h1 class="h5 mb-0 text-primary d-flex align-items-center gap-2">
                                 <i class="bi bi-collection-play-fill fs-3"></i>
@@ -38,7 +51,7 @@
             <!--SECTION ADD MOVIE-->
             <section class="col-12 col-lg-6">
                 <a href="" class="text-decoration-none">
-                    <div class="card h-100 shadow-sm border-0 rounded-4">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 hover-lift">
                         <div class="card-header bg-transparent border-0 pt-4 pb-0">
                             <h1 class="h5 mb-0 text-success d-flex align-items-center gap-2">
                                 <i class="bi bi-calendar-plus-fill fs-3"></i>
@@ -63,7 +76,7 @@
             <!--SECTION ADD GENRE-->
             <section class="col-12 col-lg-6">
                 <a href="" class="text-decoration-none">
-                    <div class="card h-100 shadow-sm border-0 rounded-4">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 hover-lift">
                         <div class="card-header bg-transparent border-0 pt-4 pb-0">
                             <h1 class="h5 mb-0 text-danger d-flex align-items-center gap-2">
                                 <i class="bi bi-tags-fill fs-3"></i>
@@ -88,7 +101,7 @@
             <!--SECTION ADD PEOPLE-->
             <section class="col-12 col-lg-6">
                 <a href="" class="text-decoration-none">
-                    <div class="card h-100 shadow-sm border-0 rounded-4">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 hover-lift">
                         <div class="card-header bg-transparent border-0 pt-4 pb-0">
                             <h1 class="h5 mb-0 text-info d-flex align-items-center gap-2">
                                 <i class="bi bi-people-fill fs-3"></i>
