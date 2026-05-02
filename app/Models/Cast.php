@@ -7,7 +7,7 @@ use App\Models\Movie;
 use App\Models\Person;
 use App\Models\Role;
 
-class MoviePerson extends Pivot
+class Cast extends Pivot
 {
 
     protected $table = 'cast';

@@ -7,7 +7,7 @@ use App\Models\Cast;
 
 class Role extends Model
 {
-    public function moviePeople(){
+    public function Cast(){
         return $this->hasMany(Cast::class);
     }
 }
