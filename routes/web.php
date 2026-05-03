@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\GenreController;
 use App\Http\Controllers\MovieController;
+use App\Http\Controllers\PersonController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -23,6 +24,9 @@ Route::resource('movies', MovieController::class)
     ->middleware(['auth', 'verified']);
 
 Route::resource('genres', GenreController::class)
+    ->middleware(['auth', 'verified']);
+
+Route::resource('people', PersonController::class)
     ->middleware(['auth', 'verified']);
 
 
