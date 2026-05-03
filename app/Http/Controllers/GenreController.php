@@ -14,7 +14,7 @@ class GenreController extends Controller
     public function index()
     {
         $genres = Genre::all();
-        return view('movies.all_genres', compact('genres'));
+        return view('genres.all_genres', compact('genres'));
     }
 
     /**
@@ -36,9 +36,9 @@ class GenreController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Genre $genre)
     {
-        //
+        return view('genres.show_genre', compact('genre'));
     }
 
     /**

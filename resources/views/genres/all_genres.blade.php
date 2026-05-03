@@ -3,7 +3,15 @@
 
 @section('content')
     <div class="container py-5">
-        <h1 class="mb-4 fw-bold text-primary">Esplora Generi</h1>
+        <div class="d-flex align-items-center mb-4">
+            <h1 class="fw-bold text-primary mb-0">Esplora Generi</h1>
+
+            <a href="{{ route('genres.create') }}"
+                class="btn bg-secondary-subtle text-primary btn-sm shadow-sm d-inline-flex align-items-center border-0 px-3 py-2 fw-bold ms-4">
+                Aggiungi un genere
+                <i class="bi bi-plus-circle-fill ms-2"></i>
+            </a>
+        </div>
 
         <div class="row g-4">
             @foreach ($genres as $genre)
@@ -35,8 +43,8 @@
                         </div>
 
                         <div class="card-body p-0 overflow-hidden" style="height: 300px;">
-                            <img src="{{ Storage::url($genre->url_image) }}" alt="img-genre"
-                                class="w-100 h-100 object-fit-cover">
+                            <a href="{{ route('genres.show', $genre) }}"><img src="{{ Storage::url($genre->url_image) }}"
+                                    alt="img-genre" class="w-100 h-100 object-fit-cover"></a>
                         </div>
 
                         <div class="card-footer bg-white border-0 py-3">

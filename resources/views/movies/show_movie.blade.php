@@ -7,6 +7,11 @@
         <div class="row justify-content-center">
             <div class="col-12 col-lg-9">
 
+                <span class="badge rounded-pill bg-primary fs-5 text-dark mx-1">
+                    <a class="text-decoration-none text-dark" href="{{ route('movies.index') }}">
+                        Torna ai film
+                    </a>
+                </span>
                 <div class="card shadow">
                     <!-- CARD HEADER -->
                     <div class="card-header bg-dark text-white py-3">
