@@ -31,10 +31,14 @@
                                     </td>
                                     <td>{{ $movie->getDirectorName() }}</td>
                                     <td>
-                                        <span class="badge rounded-pill bg-info text-dark fw-big">
-                                            <a class="text-decoration-none text-dark"
-                                                href="{{ route('genres.index') }}">{{ $movie->getGenres() }}</a>
-                                        </span>
+                                        @foreach ($movie->getGenres() as $genre)
+                                            <span class="badge rounded-pill bg-secondary-subtle text-dark fw-bold me-2">
+                                                <a class="text-decoration-none text-dark"
+                                                    href="{{ route('genres.show', $genre) }}">
+                                                    {{ $genre->name }}
+                                                </a>
+                                            </span>
+                                        @endforeach
                                     </td>
                                     <td>{{ $movie->duration }}''</td>
                                     <td>

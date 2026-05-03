@@ -30,6 +30,11 @@ class Movie extends Model
     }
 
     public function getGenres(){
-      return $this->genres->pluck('name')->implode(', ');
+      return $this->genres;
+    }
+
+    public function castMembers()
+    {
+        return $this->hasMany(Cast::class);
     }
 }

@@ -35,9 +35,22 @@ class MovieController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Movie $movie)
+   public function show(Movie $movie)
     {
-        return view('movies.show_movie', compact('movie'));
+
+        $movie->load(['genres', 'castMembers.person', 'castMembers.role']);
+
+        $cast_data = $movie->castMembers->map(function ($castItem) {
+            return [
+
+                'name'      => $castItem->person->name,
+                'last_name' => $castItem->person->last_name,
+                'role'      => $castItem->role->name
+            ];
+        });
+
+
+        return view('movies.show_movie', compact('movie', 'cast_data'));
     }
 
     /**
