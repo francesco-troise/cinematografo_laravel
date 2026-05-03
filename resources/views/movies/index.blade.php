@@ -31,7 +31,8 @@
                                     <td>{{ $movie->getDirectorName() }}</td>
                                     <td>
                                         <span class="badge rounded-pill bg-info text-dark fw-big">
-                                            {{ $movie->getGenres() }}
+                                            <a class="text-decoration-none text-dark"
+                                                href="{{ route('genre.index') }}">{{ $movie->getGenres() }}</a>
                                         </span>
                                     </td>
                                     <td>{{ $movie->duration }}''</td>

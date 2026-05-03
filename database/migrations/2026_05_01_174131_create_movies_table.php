@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title', 100);
             $table->integer('duration');
+            $table->text('plot');
             $table->string('url_poster');
             $table->tinyInteger('pegi');
             $table->timestamps();

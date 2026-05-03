@@ -55,27 +55,53 @@ class DatabaseSeeder extends Seeder
         return DB::table('roles')->pluck('id', 'name')->all();
     }
 
-    private function seedGenres(): array
+private function seedGenres(): array
     {
         $now = now();
 
         $genres = [
-            'Science Fiction' => 'Storie ambientate in scenari futuristici o basate su concetti scientifici speculativi.',
-            'Thriller'        => 'Narrazioni ad alta tensione, suspense e ritmo incalzante.',
-            'Drama'           => 'Film centrati su conflitti emotivi, relazioni e sviluppo dei personaggi.',
-            'Action'          => 'Opere con forte presenza di sequenze dinamiche, inseguimenti e combattimenti.',
-            'Crime'           => 'Storie legate a criminalità, indagini, mafia e contesti illegali.',
-            'Adventure'       => 'Film incentrati su viaggio, scoperta ed esplorazione.',
-            'Romance'         => 'Narrazioni con forte componente sentimentale e relazionale.',
-            'Fantasy'         => 'Storie con elementi immaginari, magici o mitologici.',
+            'Science Fiction' => [
+                'description' => 'Storie ambientate in scenari futuristici o basate su concetti scientifici speculativi.',
+                'url_image'   => 'images/genres/science_fiction.jpg'
+            ],
+            'Thriller' => [
+                'description' => 'Narrazioni ad alta tensione, suspense e ritmo incalzante.',
+                'url_image'   => 'images/genres/thriller.jpg'
+            ],
+            'Drama' => [
+                'description' => 'Film centrati su conflitti emotivi, relazioni e sviluppo dei personaggi.',
+                'url_image'   => 'images/genres/drama.jpg'
+            ],
+            'Action' => [
+                'description' => 'Opere con forte presenza di sequenze dinamiche, inseguimenti e combattimenti.',
+                'url_image'   => 'images/genres/action.jpg'
+            ],
+            'Crime' => [
+                'description' => 'Storie legate a criminalità, indagini, mafia e contesti illegali.',
+                'url_image'   => 'images/genres/crime.jpg'
+            ],
+            'Adventure' => [
+                'description' => 'Film incentrati su viaggio, scoperta ed esplorazione.',
+                'url_image'   => 'images/genres/adventure.jpg'
+            ],
+            'Romance' => [
+                'description' => 'Narrazioni con forte componente sentimentale e relazionale.',
+                'url_image'   => 'images/genres/romance.jpg'
+            ],
+            'Fantasy' => [
+                'description' => 'Storie con elementi immaginari, magici o mitologici.',
+                'url_image'   => 'images/genres/fantasy.jpg'
+            ],
         ];
 
-        foreach ($genres as $name => $description) {
+
+        foreach ($genres as $name => $data) {
             DB::table('genres')->insert([
-                'name' => $name,
-                'description' => $description,
-                'created_at' => $now,
-                'updated_at' => $now,
+                'name'        => $name,
+                'description' => $data['description'],
+                'url_image'   => $data['url_image'],
+                'created_at'  => $now,
+                'updated_at'  => $now,
             ]);
         }
 
@@ -616,97 +642,112 @@ class DatabaseSeeder extends Seeder
         return $ids;
     }
 
-    private function seedMovies(): array
+private function seedMovies(): array
     {
         $now = now();
 
         $movies = [
             'inception' => [
                 'title' => 'Inception',
+                'trama' => 'Dom Cobb è un ladro esperto nell\'estrarre segreti dal subconscio durante lo stato di sogno. Ora gli viene offerta la possibilità di redimersi compiendo l\'impossibile: innestare un\'idea anziché rubarla.',
                 'duration' => 148,
                 'url_poster' => 'storage/images/movies/inception.jpg',
                 'pegi' => 13,
             ],
             'dark_knight' => [
                 'title' => 'The Dark Knight',
+                'trama' => 'Batman, il tenente Gordon e il procuratore distrettuale Harvey Dent affrontano il Joker, una mente criminale che fa precipitare Gotham City nell\'anarchia, spingendo il Cavaliere Oscuro al limite.',
                 'duration' => 152,
                 'url_poster' => 'storage/images/movies/dark_knight.jpg',
                 'pegi' => 13,
             ],
             'interstellar' => [
                 'title' => 'Interstellar',
+                'trama' => 'In un futuro in cui la Terra sta diventando inabitabile, un gruppo di astronauti viaggia attraverso un cunicolo spaziotemporale alla ricerca di una nuova casa per l\'umanità.',
                 'duration' => 169,
                 'url_poster' => 'storage/images/movies/interstellar.jpg',
                 'pegi' => 13,
             ],
             'shawshank' => [
                 'title' => 'The Shawshank Redemption',
+                'trama' => 'Andy Dufresne, un banchiere condannato ingiustamente, stringe amicizia con il compagno di prigione Red e nel corso degli anni trova un modo per sopravvivere e mantenere viva la speranza.',
                 'duration' => 142,
                 'url_poster' => 'storage/images/movies/shawshank.jpg',
                 'pegi' => 16,
             ],
             'pulp_fiction' => [
                 'title' => 'Pulp Fiction',
+                'trama' => 'Le vite di due sicari, un pugile, la moglie di un gangster e due rapinatori di basso livello si intrecciano in quattro storie di violenza, destino e redenzione.',
                 'duration' => 154,
                 'url_poster' => 'storage/images/movies/pulp_fiction.jpg',
                 'pegi' => 18,
             ],
             'godfather' => [
                 'title' => 'The Godfather',
+                'trama' => 'Il patriarca di una potente dinastia mafiosa italo-americana, Don Vito Corleone, trasferisce il controllo del suo impero clandestino al figlio riluttante, Michael.',
                 'duration' => 175,
                 'url_poster' => 'storage/images/movies/godfather.jpg',
                 'pegi' => 18,
             ],
             'fight_club' => [
                 'title' => 'Fight Club',
+                'trama' => 'Un impiegato insonne e un venditore di sapone anticonformista formano un club di combattimento clandestino che si evolve in qualcosa di molto più grande e pericoloso.',
                 'duration' => 139,
                 'url_poster' => 'storage/images/movies/fight_club.jpg',
                 'pegi' => 18,
             ],
             'matrix' => [
                 'title' => 'The Matrix',
+                'trama' => 'Un hacker informatico scopre la scioccante verità: la vita che conosce è la complessa illusione di un mondo dominato da macchine intelligenti. Si unisce a una ribellione per distruggerle.',
                 'duration' => 136,
                 'url_poster' => 'storage/images/movies/matrix.jpg',
                 'pegi' => 14,
             ],
             'parasite' => [
                 'title' => 'Parasite',
+                'trama' => 'L\'avidità e la discriminazione di classe minacciano il rapporto simbiotico di recente formazione tra la ricca famiglia Park e la famiglia Kim, che vive in estrema povertà.',
                 'duration' => 132,
                 'url_poster' => 'storage/images/movies/parasite.jpg',
                 'pegi' => 14,
             ],
             'la_la_land' => [
                 'title' => 'La La Land',
+                'trama' => 'Mentre cercano di farsi strada a Los Angeles, un pianista jazz e un\'aspirante attrice si innamorano, ma le loro crescenti ambizioni li mettono di fronte a scelte difficili per la loro relazione.',
                 'duration' => 128,
                 'url_poster' => 'storage/images/movies/la_la_land.jpg',
                 'pegi' => 12,
             ],
             'jurassic_park' => [
                 'title' => 'Jurassic Park',
+                'trama' => 'Un miliardario crea un parco a tema con cloni di dinosauri, ma la situazione precipita quando un guasto ai sistemi di sicurezza permette alle creature di fuggire durante una visita inaugurale.',
                 'duration' => 127,
                 'url_poster' => 'storage/images/movies/jurassic_park.jpeg',
                 'pegi' => 12,
             ],
             'titanic' => [
                 'title' => 'Titanic',
+                'trama' => 'Una giovane aristocratica, promessa in sposa a un uomo ricco e arrogante, si innamora di un artista di umili origini a bordo del lussuoso e sfortunato transatlantico R.M.S. Titanic.',
                 'duration' => 194,
                 'url_poster' => 'storage/images/movies/titanic.jpg',
                 'pegi' => 12,
             ],
             'gladiator' => [
                 'title' => 'Gladiator',
+                'trama' => 'Un ex generale romano viene tradito e la sua famiglia assassinata dal figlio corrotto dell\'imperatore. Ridotto in schiavitù, diventa un gladiatore in cerca di vendetta.',
                 'duration' => 155,
                 'url_poster' => 'storage/images/movies/gladiator.jpg',
                 'pegi' => 16,
             ],
             'lotr_fellowship' => [
                 'title' => 'The Lord of the Rings: The Fellowship of the Ring',
+                'trama' => 'Un timido Hobbit della Contea e otto compagni intraprendono un viaggio epico per distruggere il potente Unico Anello e salvare la Terra di Mezzo dall\'Oscuro Signore Sauron.',
                 'duration' => 178,
                 'url_poster' => 'storage/images/movies/lotr_fellowship.jpg',
                 'pegi' => 12,
             ],
             'silence_lambs' => [
                 'title' => 'The Silence of the Lambs',
+                'trama' => 'Una giovane cadetta dell\'FBI deve chiedere l\'aiuto di un assassino cannibale incarcerato e manipolatore, il dottor Hannibal Lecter, per catturare un altro serial killer a piede libero.',
                 'duration' => 118,
                 'url_poster' => 'storage/images/movies/silence_lambs.jpg',
                 'pegi' => 18,
