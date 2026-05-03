@@ -79,7 +79,7 @@
 
                                 <div class="dropdown-menu dropdown-menu-end border-0 shadow-lg mt-2 p-2 rounded-4"
                                     aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item rounded-3 py-2" href="{{ route('movie.index') }}">
+                                    <a class="dropdown-item rounded-3 py-2" href="{{ route('movies.index') }}">
                                         <i class="bi bi-speedometer2 me-2 text-primary"></i>{{ __('Dashboard') }}
                                     </a>
                                     <a class="dropdown-item rounded-3 py-2" href="{{ url('profile') }}">

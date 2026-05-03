@@ -26,7 +26,7 @@
                             @foreach ($movies as $movie)
                                 <tr>
                                     <td class="ps-4 fw-bold">
-                                        <a href="{{ route('movie.show', $movie) }}"></a>{{ $movie->title }}
+                                        <a href="{{ route('movies.show', $movie) }}"></a>{{ $movie->title }}
                                     </td>
                                     <td>{{ $movie->getDirectorName() }}</td>
                                     <td>
@@ -42,12 +42,12 @@
                                     </td>
                                     <td class="text-end pe-4">
                                         <div class="d-flex justify-content-end gap-2">
-                                            <a href="{{ route('movie.edit', $movie) }}"
+                                            <a href="{{ route('movies.edit', $movie) }}"
                                                 class="btn btn-warning btn-sm shadow-sm d-inline-flex align-items-center">
                                                 <i class="bi bi-pencil me-1"></i> Modifica film
                                             </a>
 
-                                            <form action="{{ route('movie.destroy', $movie) }}" method="POST"
+                                            <form action="{{ route('movies.destroy', $movie) }}" method="POST"
                                                 class="d-inline-block">
                                                 @csrf
                                                 @method('DELETE')
