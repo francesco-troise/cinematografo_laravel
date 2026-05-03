@@ -23,10 +23,14 @@
 
 
             <div class="d-flex flex-wrap gap-3">
+
+                <!--Link to dashboard-->
                 <a href="{{ route('dashboard') }}"
                     class="btn btn-primary btn-lg rounded-pill px-5 py-3 fw-bold shadow-lg d-flex align-items-center border-0">
                     <i class="bi bi-grid-1x2-fill me-2"></i> OPEN DASHBOARD
                 </a>
+
+                <!--Link to profile-->
                 <a href="{{ url('profile') }}"
                     class="btn btn-outline-light btn-lg rounded-pill px-5 py-3 fw-bold d-flex align-items-center border-opacity-25">
                     <i class="bi bi-person-bounding-box me-2"></i> VIEW PROFILE

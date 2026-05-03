@@ -20,6 +20,7 @@ class Movie extends Model
                     ->withTimestamps();
     }
 
+
     public function getDirector(){
         return $this->people->where('pivot.role_id', 1)->first();
     }
