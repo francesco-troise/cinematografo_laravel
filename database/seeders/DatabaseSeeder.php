@@ -120,7 +120,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1970-07-30',
         'nationality' => 'GB',
-        'url_image' => 'storage/images/people/Christopher_Nolan.jpg',
+        'url_image' => 'images/people/Christopher_Nolan.jpg',
     ],
     'leonardo_dicaprio' => [
         'name' => 'Leonardo',
@@ -128,7 +128,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1974-11-11',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Leonardo_DiCaprio.jpg',
+        'url_image' => 'images/people/Leonardo_DiCaprio.jpg',
     ],
     'joseph_gordon_levitt' => [
         'name' => 'Joseph',
@@ -136,7 +136,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1981-02-17',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Joseph_Gordon_Levitt.jpg',
+        'url_image' => 'images/people/Joseph_Gordon_Levitt.jpg',
     ],
     'tom_hardy' => [
         'name' => 'Tom',
@@ -144,7 +144,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1977-09-15',
         'nationality' => 'GB',
-        'url_image' => 'storage/images/people/Tom_Hardy.jpg',
+        'url_image' => 'images/people/Tom_Hardy.jpg',
     ],
     'marion_cotillard' => [
         'name' => 'Marion',
@@ -152,7 +152,7 @@ private function seedGenres(): array
         'gender' => 'F',
         'date_of_birth' => '1975-09-30',
         'nationality' => 'FR',
-        'url_image' => 'storage/images/people/Marion_Cotillard.jpg',
+        'url_image' => 'images/people/Marion_Cotillard.jpg',
     ],
 
     // The Dark Knight / Interstellar
@@ -162,7 +162,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1974-01-30',
         'nationality' => 'GB',
-        'url_image' => 'storage/images/people/Christian_Bale.jpg',
+        'url_image' => 'images/people/Christian_Bale.jpg',
     ],
     'heath_ledger' => [
         'name' => 'Heath',
@@ -170,7 +170,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1979-04-04',
         'nationality' => 'AU',
-        'url_image' => 'storage/images/people/Heath_Ledger.jpg',
+        'url_image' => 'images/people/Heath_Ledger.jpg',
     ],
     'michael_caine' => [
         'name' => 'Michael',
@@ -178,7 +178,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1933-03-14',
         'nationality' => 'GB',
-        'url_image' => 'storage/images/people/Michael_Caine.jpg',
+        'url_image' => 'images/people/Michael_Caine.jpg',
     ],
     'matthew_mcconaughey' => [
         'name' => 'Matthew',
@@ -186,7 +186,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1969-11-04',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Matthew_McConaughey.jpg',
+        'url_image' => 'images/people/Matthew_McConaughey.jpg',
     ],
     'anne_hathaway' => [
         'name' => 'Anne',
@@ -194,7 +194,7 @@ private function seedGenres(): array
         'gender' => 'F',
         'date_of_birth' => '1982-11-12',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Anne_Hathaway.jpg',
+        'url_image' => 'images/people/Anne_Hathaway.jpg',
     ],
     'jessica_chastain' => [
         'name' => 'Jessica',
@@ -202,7 +202,7 @@ private function seedGenres(): array
         'gender' => 'F',
         'date_of_birth' => '1977-03-24',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Jessica_Chastain.jpg',
+        'url_image' => 'images/people/Jessica_Chastain.jpg',
     ],
 
     // Classic crime / drama
@@ -212,7 +212,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1959-01-28',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Frank_Darabont.jpg',
+        'url_image' => 'images/people/Frank_Darabont.jpg',
     ],
     'tim_robbins' => [
         'name' => 'Tim',
@@ -220,7 +220,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1958-10-16',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Tim_Robbins.jpg',
+        'url_image' => 'images/people/Tim_Robbins.jpg',
     ],
     'morgan_freeman' => [
         'name' => 'Morgan',
@@ -228,7 +228,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1937-06-01',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Morgan_Freeman.jpg',
+        'url_image' => 'images/people/Morgan_Freeman.jpg',
     ],
     'bob_gunton' => [
         'name' => 'Bob',
@@ -236,7 +236,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1945-11-15',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Bob_Gunton.jpg',
+        'url_image' => 'images/people/Bob_Gunton.jpg',
     ],
 
     'quentin_tarantino' => [
@@ -245,7 +245,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1963-03-27',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Quentin_Tarantino.jpg',
+        'url_image' => 'images/people/Quentin_Tarantino.jpg',
     ],
     'john_travolta' => [
         'name' => 'John',
@@ -253,7 +253,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1954-02-18',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/John_Travolta.jpg',
+        'url_image' => 'images/people/John_Travolta.jpg',
     ],
     'uma_thurman' => [
         'name' => 'Uma',
@@ -261,7 +261,7 @@ private function seedGenres(): array
         'gender' => 'F',
         'date_of_birth' => '1970-04-29',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Uma_Thurman.jpg',
+        'url_image' => 'images/people/Uma_Thurman.jpg',
     ],
     'samuel_jackson' => [
         'name' => 'Samuel L.',
@@ -269,7 +269,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1948-12-21',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Samuel_L_Jackson.jpg',
+        'url_image' => 'images/people/Samuel_L_Jackson.jpg',
     ],
 
     'francis_ford_coppola' => [
@@ -278,7 +278,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1939-04-07',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Francis_Ford_Coppola.jpg',
+        'url_image' => 'images/people/Francis_Ford_Coppola.jpg',
     ],
     'al_pacino' => [
         'name' => 'Al',
@@ -286,7 +286,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1940-04-25',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Al_Pacino.jpg',
+        'url_image' => 'images/people/Al_Pacino.jpg',
     ],
     'marlon_brando' => [
         'name' => 'Marlon',
@@ -294,7 +294,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1924-04-03',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Marlon_Brando.jpg',
+        'url_image' => 'images/people/Marlon_Brando.jpg',
     ],
     'diane_keaton' => [
         'name' => 'Diane',
@@ -302,7 +302,7 @@ private function seedGenres(): array
         'gender' => 'F',
         'date_of_birth' => '1946-01-05',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Diane_Keaton.jpg',
+        'url_image' => 'images/people/Diane_Keaton.jpg',
     ],
 
     // Fight Club
@@ -312,7 +312,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1962-08-28',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/David_Fincher.jpg',
+        'url_image' => 'images/people/David_Fincher.jpg',
     ],
     'brad_pitt' => [
         'name' => 'Brad',
@@ -320,7 +320,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1963-12-18',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Brad_Pitt.jpg',
+        'url_image' => 'images/people/Brad_Pitt.jpg',
     ],
     'edward_norton' => [
         'name' => 'Edward',
@@ -328,7 +328,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1969-08-18',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Edward_Norton.jpg',
+        'url_image' => 'images/people/Edward_Norton.jpg',
     ],
     'helena_bonham_carter' => [
         'name' => 'Helena',
@@ -336,7 +336,7 @@ private function seedGenres(): array
         'gender' => 'F',
         'date_of_birth' => '1966-05-26',
         'nationality' => 'GB',
-        'url_image' => 'storage/images/people/Helena_Bonham_Carter.jpg',
+        'url_image' => 'images/people/Helena_Bonham_Carter.jpg',
     ],
 
     // The Matrix
@@ -346,7 +346,7 @@ private function seedGenres(): array
         'gender' => 'F',
         'date_of_birth' => '1965-06-21',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Lana_Wachowski.jpg',
+        'url_image' => 'images/people/Lana_Wachowski.jpg',
     ],
     'keanu_reeves' => [
         'name' => 'Keanu',
@@ -354,7 +354,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1964-09-02',
         'nationality' => 'CA',
-        'url_image' => 'storage/images/people/Keanu_Reeves.jpg',
+        'url_image' => 'images/people/Keanu_Reeves.jpg',
     ],
     'laurence_fishburne' => [
         'name' => 'Laurence',
@@ -362,7 +362,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1961-07-30',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Laurence_Fishburne.jpg',
+        'url_image' => 'images/people/Laurence_Fishburne.jpg',
     ],
     'carrie_anne_moss' => [
         'name' => 'Carrie-Anne',
@@ -370,7 +370,7 @@ private function seedGenres(): array
         'gender' => 'F',
         'date_of_birth' => '1967-08-21',
         'nationality' => 'CA',
-        'url_image' => 'storage/images/people/Carrie_Anne_Moss.jpg',
+        'url_image' => 'images/people/Carrie_Anne_Moss.jpg',
     ],
 
     // Parasite
@@ -380,7 +380,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1969-09-14',
         'nationality' => 'KR',
-        'url_image' => 'storage/images/people/Bong_Joon_Ho.jpg',
+        'url_image' => 'images/people/Bong_Joon_Ho.jpg',
     ],
     'song_kang_ho' => [
         'name' => 'Song',
@@ -388,7 +388,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1967-01-17',
         'nationality' => 'KR',
-        'url_image' => 'storage/images/people/Song_Kang_ho.jpg',
+        'url_image' => 'images/people/Song_Kang_ho.jpg',
     ],
     'cho_yeo_jeong' => [
         'name' => 'Cho',
@@ -396,7 +396,7 @@ private function seedGenres(): array
         'gender' => 'F',
         'date_of_birth' => '1981-02-10',
         'nationality' => 'KR',
-        'url_image' => 'storage/images/people/Cho_Yeo_jeong.jpg',
+        'url_image' => 'images/people/Cho_Yeo_jeong.jpg',
     ],
     'lee_sun_kyun' => [
         'name' => 'Lee',
@@ -404,7 +404,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1975-03-02',
         'nationality' => 'KR',
-        'url_image' => 'storage/images/people/Lee_Sun_kyun.jpg',
+        'url_image' => 'images/people/Lee_Sun_kyun.jpg',
     ],
 
     // La La Land
@@ -414,7 +414,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1985-01-19',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Damien_Chazelle.jpeg',
+        'url_image' => 'images/people/Damien_Chazelle.jpeg',
     ],
     'ryan_gosling' => [
         'name' => 'Ryan',
@@ -422,7 +422,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1980-11-12',
         'nationality' => 'CA',
-        'url_image' => 'storage/images/people/Ryan_Gosling.jpg',
+        'url_image' => 'images/people/Ryan_Gosling.jpg',
     ],
     'emma_stone' => [
         'name' => 'Emma',
@@ -430,7 +430,7 @@ private function seedGenres(): array
         'gender' => 'F',
         'date_of_birth' => '1988-11-06',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Emma_Stone.jpg',
+        'url_image' => 'images/people/Emma_Stone.jpg',
     ],
     'john_legend' => [
         'name' => 'John',
@@ -438,7 +438,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1978-12-28',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/John_Legend.jpg',
+        'url_image' => 'images/people/John_Legend.jpg',
     ],
 
     // Jurassic Park
@@ -448,7 +448,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1946-12-18',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Steven_Spielberg.jpg',
+        'url_image' => 'images/people/Steven_Spielberg.jpg',
     ],
     'sam_neill' => [
         'name' => 'Sam',
@@ -456,7 +456,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1947-09-14',
         'nationality' => 'NZ',
-        'url_image' => 'storage/images/people/Sam_Neill.jpg',
+        'url_image' => 'images/people/Sam_Neill.jpg',
     ],
     'laura_dern' => [
         'name' => 'Laura',
@@ -464,7 +464,7 @@ private function seedGenres(): array
         'gender' => 'F',
         'date_of_birth' => '1967-02-10',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Laura_Dern.jpg',
+        'url_image' => 'images/people/Laura_Dern.jpg',
     ],
     'jeff_goldblum' => [
         'name' => 'Jeff',
@@ -472,7 +472,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1952-10-22',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Jeff_Goldblum.jpg',
+        'url_image' => 'images/people/Jeff_Goldblum.jpg',
     ],
 
     // Titanic
@@ -482,7 +482,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1954-08-16',
         'nationality' => 'CA',
-        'url_image' => 'storage/images/people/James_Cameron.jpg',
+        'url_image' => 'images/people/James_Cameron.jpg',
     ],
     'kate_winslet' => [
         'name' => 'Kate',
@@ -490,7 +490,7 @@ private function seedGenres(): array
         'gender' => 'F',
         'date_of_birth' => '1975-10-05',
         'nationality' => 'GB',
-        'url_image' => 'storage/images/people/Kate_Winslet.jpg',
+        'url_image' => 'images/people/Kate_Winslet.jpg',
     ],
     'billy_zane' => [
         'name' => 'Billy',
@@ -498,7 +498,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1966-02-24',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Billy_Zane.jpg',
+        'url_image' => 'images/people/Billy_Zane.jpg',
     ],
     'frances_fisher' => [
         'name' => 'Frances',
@@ -506,7 +506,7 @@ private function seedGenres(): array
         'gender' => 'F',
         'date_of_birth' => '1952-05-11',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Frances_Fisher.jpg',
+        'url_image' => 'images/people/Frances_Fisher.jpg',
     ],
 
     // Gladiator
@@ -516,7 +516,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1937-11-30',
         'nationality' => 'GB',
-        'url_image' => 'storage/images/people/Ridley_Scott.jpg',
+        'url_image' => 'images/people/Ridley_Scott.jpg',
     ],
     'russell_crowe' => [
         'name' => 'Russell',
@@ -524,7 +524,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1964-04-07',
         'nationality' => 'NZ',
-        'url_image' => 'storage/images/people/Russell_Crowe.jpg',
+        'url_image' => 'images/people/Russell_Crowe.jpg',
     ],
     'joaquin_phoenix' => [
         'name' => 'Joaquin',
@@ -532,7 +532,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1974-10-28',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Joaquin_Phoenix.jpg',
+        'url_image' => 'images/people/Joaquin_Phoenix.jpg',
     ],
     'connie_nielsen' => [
         'name' => 'Connie',
@@ -540,7 +540,7 @@ private function seedGenres(): array
         'gender' => 'F',
         'date_of_birth' => '1965-07-03',
         'nationality' => 'DK',
-        'url_image' => 'storage/images/people/Connie_Nielsen.jpg',
+        'url_image' => 'images/people/Connie_Nielsen.jpg',
     ],
 
     // The Lord of the Rings
@@ -550,7 +550,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1961-10-31',
         'nationality' => 'NZ',
-        'url_image' => 'storage/images/people/Peter_Jackson.jpg',
+        'url_image' => 'images/people/Peter_Jackson.jpg',
     ],
     'elijah_wood' => [
         'name' => 'Elijah',
@@ -558,7 +558,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1981-01-28',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Elijah_Wood.jpg',
+        'url_image' => 'images/people/Elijah_Wood.jpg',
     ],
     'ian_mckellen' => [
         'name' => 'Ian',
@@ -566,7 +566,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1939-05-25',
         'nationality' => 'GB',
-        'url_image' => 'storage/images/people/Ian_McKellen.jpg',
+        'url_image' => 'images/people/Ian_McKellen.jpg',
     ],
     'orlando_bloom' => [
         'name' => 'Orlando',
@@ -574,7 +574,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1977-01-13',
         'nationality' => 'GB',
-        'url_image' => 'storage/images/people/Orlando_Bloom.jpg',
+        'url_image' => 'images/people/Orlando_Bloom.jpg',
     ],
 
     // The Silence of the Lambs
@@ -584,7 +584,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1944-02-22',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Jonathan_Demme.jpg',
+        'url_image' => 'images/people/Jonathan_Demme.jpg',
     ],
     'jodie_foster' => [
         'name' => 'Jodie',
@@ -592,7 +592,7 @@ private function seedGenres(): array
         'gender' => 'F',
         'date_of_birth' => '1962-11-19',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Jodie_Foster.jpg',
+        'url_image' => 'images/people/Jodie_Foster.jpg',
     ],
     'anthony_hopkins' => [
         'name' => 'Anthony',
@@ -600,7 +600,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1937-12-31',
         'nationality' => 'GB',
-        'url_image' => 'storage/images/people/Anthony_Hopkins.jpg',
+        'url_image' => 'images/people/Anthony_Hopkins.jpg',
     ],
     'ted_levine' => [
         'name' => 'Ted',
@@ -608,7 +608,7 @@ private function seedGenres(): array
         'gender' => 'M',
         'date_of_birth' => '1957-05-29',
         'nationality' => 'US',
-        'url_image' => 'storage/images/people/Ted_Levine.jpg',
+        'url_image' => 'images/people/Ted_Levine.jpg',
     ],
 ];
 
@@ -626,7 +626,7 @@ private function seedGenres(): array
                 'gender' => $faker->randomElement(['M', 'F', 'O', 'U']),
                 'date_of_birth' => $faker->dateTimeBetween('-70 years', '-18 years')->format('Y-m-d'),
                 'nationality' => $faker->randomElement($nationalities),
-                'url_image' => 'storage/images/people/Default_Img.png',
+                'url_image' => 'images/people/Default_Img.png',
             ];
         }
 
@@ -649,107 +649,107 @@ private function seedMovies(): array
         $movies = [
             'inception' => [
                 'title' => 'Inception',
-                'trama' => 'Dom Cobb è un ladro esperto nell\'estrarre segreti dal subconscio durante lo stato di sogno. Ora gli viene offerta la possibilità di redimersi compiendo l\'impossibile: innestare un\'idea anziché rubarla.',
+                'plot' => 'Dom Cobb è un ladro esperto nell\'estrarre segreti dal subconscio durante lo stato di sogno. Ora gli viene offerta la possibilità di redimersi compiendo l\'impossibile: innestare un\'idea anziché rubarla.',
                 'duration' => 148,
-                'url_poster' => 'storage/images/movies/inception.jpg',
+                'url_poster' => 'images/movies/inception.jpg',
                 'pegi' => 13,
             ],
             'dark_knight' => [
                 'title' => 'The Dark Knight',
-                'trama' => 'Batman, il tenente Gordon e il procuratore distrettuale Harvey Dent affrontano il Joker, una mente criminale che fa precipitare Gotham City nell\'anarchia, spingendo il Cavaliere Oscuro al limite.',
+                'plot' => 'Batman, il tenente Gordon e il procuratore distrettuale Harvey Dent affrontano il Joker, una mente criminale che fa precipitare Gotham City nell\'anarchia, spingendo il Cavaliere Oscuro al limite.',
                 'duration' => 152,
-                'url_poster' => 'storage/images/movies/dark_knight.jpg',
+                'url_poster' => 'images/movies/dark_knight.jpg',
                 'pegi' => 13,
             ],
             'interstellar' => [
                 'title' => 'Interstellar',
-                'trama' => 'In un futuro in cui la Terra sta diventando inabitabile, un gruppo di astronauti viaggia attraverso un cunicolo spaziotemporale alla ricerca di una nuova casa per l\'umanità.',
+                'plot' => 'In un futuro in cui la Terra sta diventando inabitabile, un gruppo di astronauti viaggia attraverso un cunicolo spaziotemporale alla ricerca di una nuova casa per l\'umanità.',
                 'duration' => 169,
-                'url_poster' => 'storage/images/movies/interstellar.jpg',
+                'url_poster' => 'images/movies/interstellar.jpg',
                 'pegi' => 13,
             ],
             'shawshank' => [
                 'title' => 'The Shawshank Redemption',
-                'trama' => 'Andy Dufresne, un banchiere condannato ingiustamente, stringe amicizia con il compagno di prigione Red e nel corso degli anni trova un modo per sopravvivere e mantenere viva la speranza.',
+                'plot' => 'Andy Dufresne, un banchiere condannato ingiustamente, stringe amicizia con il compagno di prigione Red e nel corso degli anni trova un modo per sopravvivere e mantenere viva la speranza.',
                 'duration' => 142,
-                'url_poster' => 'storage/images/movies/shawshank.jpg',
+                'url_poster' => 'images/movies/shawshank.jpg',
                 'pegi' => 16,
             ],
             'pulp_fiction' => [
                 'title' => 'Pulp Fiction',
-                'trama' => 'Le vite di due sicari, un pugile, la moglie di un gangster e due rapinatori di basso livello si intrecciano in quattro storie di violenza, destino e redenzione.',
+                'plot' => 'Le vite di due sicari, un pugile, la moglie di un gangster e due rapinatori di basso livello si intrecciano in quattro storie di violenza, destino e redenzione.',
                 'duration' => 154,
-                'url_poster' => 'storage/images/movies/pulp_fiction.jpg',
+                'url_poster' => 'images/movies/pulp_fiction.jpg',
                 'pegi' => 18,
             ],
             'godfather' => [
                 'title' => 'The Godfather',
-                'trama' => 'Il patriarca di una potente dinastia mafiosa italo-americana, Don Vito Corleone, trasferisce il controllo del suo impero clandestino al figlio riluttante, Michael.',
+                'plot' => 'Il patriarca di una potente dinastia mafiosa italo-americana, Don Vito Corleone, trasferisce il controllo del suo impero clandestino al figlio riluttante, Michael.',
                 'duration' => 175,
-                'url_poster' => 'storage/images/movies/godfather.jpg',
+                'url_poster' => 'images/movies/godfather.jpg',
                 'pegi' => 18,
             ],
             'fight_club' => [
                 'title' => 'Fight Club',
-                'trama' => 'Un impiegato insonne e un venditore di sapone anticonformista formano un club di combattimento clandestino che si evolve in qualcosa di molto più grande e pericoloso.',
+                'plot' => 'Un impiegato insonne e un venditore di sapone anticonformista formano un club di combattimento clandestino che si evolve in qualcosa di molto più grande e pericoloso.',
                 'duration' => 139,
-                'url_poster' => 'storage/images/movies/fight_club.jpg',
+                'url_poster' => 'images/movies/fight_club.jpg',
                 'pegi' => 18,
             ],
             'matrix' => [
                 'title' => 'The Matrix',
-                'trama' => 'Un hacker informatico scopre la scioccante verità: la vita che conosce è la complessa illusione di un mondo dominato da macchine intelligenti. Si unisce a una ribellione per distruggerle.',
+                'plot' => 'Un hacker informatico scopre la scioccante verità: la vita che conosce è la complessa illusione di un mondo dominato da macchine intelligenti. Si unisce a una ribellione per distruggerle.',
                 'duration' => 136,
-                'url_poster' => 'storage/images/movies/matrix.jpg',
+                'url_poster' => 'images/movies/matrix.jpg',
                 'pegi' => 14,
             ],
             'parasite' => [
                 'title' => 'Parasite',
-                'trama' => 'L\'avidità e la discriminazione di classe minacciano il rapporto simbiotico di recente formazione tra la ricca famiglia Park e la famiglia Kim, che vive in estrema povertà.',
+                'plot' => 'L\'avidità e la discriminazione di classe minacciano il rapporto simbiotico di recente formazione tra la ricca famiglia Park e la famiglia Kim, che vive in estrema povertà.',
                 'duration' => 132,
-                'url_poster' => 'storage/images/movies/parasite.jpg',
+                'url_poster' => 'images/movies/parasite.jpg',
                 'pegi' => 14,
             ],
             'la_la_land' => [
                 'title' => 'La La Land',
-                'trama' => 'Mentre cercano di farsi strada a Los Angeles, un pianista jazz e un\'aspirante attrice si innamorano, ma le loro crescenti ambizioni li mettono di fronte a scelte difficili per la loro relazione.',
+                'plot' => 'Mentre cercano di farsi strada a Los Angeles, un pianista jazz e un\'aspirante attrice si innamorano, ma le loro crescenti ambizioni li mettono di fronte a scelte difficili per la loro relazione.',
                 'duration' => 128,
-                'url_poster' => 'storage/images/movies/la_la_land.jpg',
+                'url_poster' => 'images/movies/la_la_land.jpg',
                 'pegi' => 12,
             ],
             'jurassic_park' => [
                 'title' => 'Jurassic Park',
-                'trama' => 'Un miliardario crea un parco a tema con cloni di dinosauri, ma la situazione precipita quando un guasto ai sistemi di sicurezza permette alle creature di fuggire durante una visita inaugurale.',
+                'plot' => 'Un miliardario crea un parco a tema con cloni di dinosauri, ma la situazione precipita quando un guasto ai sistemi di sicurezza permette alle creature di fuggire durante una visita inaugurale.',
                 'duration' => 127,
-                'url_poster' => 'storage/images/movies/jurassic_park.jpeg',
+                'url_poster' => 'images/movies/jurassic_park.jpeg',
                 'pegi' => 12,
             ],
             'titanic' => [
                 'title' => 'Titanic',
-                'trama' => 'Una giovane aristocratica, promessa in sposa a un uomo ricco e arrogante, si innamora di un artista di umili origini a bordo del lussuoso e sfortunato transatlantico R.M.S. Titanic.',
+                'plot' => 'Una giovane aristocratica, promessa in sposa a un uomo ricco e arrogante, si innamora di un artista di umili origini a bordo del lussuoso e sfortunato transatlantico R.M.S. Titanic.',
                 'duration' => 194,
-                'url_poster' => 'storage/images/movies/titanic.jpg',
+                'url_poster' => 'images/movies/titanic.jpg',
                 'pegi' => 12,
             ],
             'gladiator' => [
                 'title' => 'Gladiator',
-                'trama' => 'Un ex generale romano viene tradito e la sua famiglia assassinata dal figlio corrotto dell\'imperatore. Ridotto in schiavitù, diventa un gladiatore in cerca di vendetta.',
+                'plot' => 'Un ex generale romano viene tradito e la sua famiglia assassinata dal figlio corrotto dell\'imperatore. Ridotto in schiavitù, diventa un gladiatore in cerca di vendetta.',
                 'duration' => 155,
-                'url_poster' => 'storage/images/movies/gladiator.jpg',
+                'url_poster' => 'images/movies/gladiator.jpg',
                 'pegi' => 16,
             ],
             'lotr_fellowship' => [
                 'title' => 'The Lord of the Rings: The Fellowship of the Ring',
-                'trama' => 'Un timido Hobbit della Contea e otto compagni intraprendono un viaggio epico per distruggere il potente Unico Anello e salvare la Terra di Mezzo dall\'Oscuro Signore Sauron.',
+                'plot' => 'Un timido Hobbit della Contea e otto compagni intraprendono un viaggio epico per distruggere il potente Unico Anello e salvare la Terra di Mezzo dall\'Oscuro Signore Sauron.',
                 'duration' => 178,
-                'url_poster' => 'storage/images/movies/lotr_fellowship.jpg',
+                'url_poster' => 'images/movies/lotr_fellowship.jpg',
                 'pegi' => 12,
             ],
             'silence_lambs' => [
                 'title' => 'The Silence of the Lambs',
-                'trama' => 'Una giovane cadetta dell\'FBI deve chiedere l\'aiuto di un assassino cannibale incarcerato e manipolatore, il dottor Hannibal Lecter, per catturare un altro serial killer a piede libero.',
+                'plot' => 'Una giovane cadetta dell\'FBI deve chiedere l\'aiuto di un assassino cannibale incarcerato e manipolatore, il dottor Hannibal Lecter, per catturare un altro serial killer a piede libero.',
                 'duration' => 118,
-                'url_poster' => 'storage/images/movies/silence_lambs.jpg',
+                'url_poster' => 'images/movies/silence_lambs.jpg',
                 'pegi' => 18,
             ],
         ];

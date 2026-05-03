@@ -12,27 +12,28 @@
             <div class="card-body p-0">
                 <div class="table-responsive">
                     <table class="table table-hover align-middle mb-0">
-                        <thead class="table-light">
-                            <tr>
-                                <th class="ps-4">Titolo</th>
-                                <th>Regista</th>
-                                <th>Genere</th>
-                                <th>Durata</th>
-                                <th>Pegi</th>
-                                <th class="text-end pe-4">Azioni</th>
+                        <thead class="table-dark shadow-sm">
+                            <tr class="border-0">
+                                <th class="ps-4 py-3 border-0">Titolo</th>
+                                <th class="py-3 border-0">Regista</th>
+                                <th class="py-3 border-0">Genere</th>
+                                <th class="py-3 border-0">Durata</th>
+                                <th class="py-3 border-0">Pegi</th>
+                                <th class="text-end pe-4 py-3 border-0">Azioni</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($movies as $movie)
                                 <tr>
                                     <td class="ps-4 fw-bold">
-                                        <a href="{{ route('movies.show', $movie) }}"></a>{{ $movie->title }}
+                                        <a class="text-decoration-none text-reset"
+                                            href="{{ route('movies.show', $movie) }}">{{ $movie->title }}</a>
                                     </td>
                                     <td>{{ $movie->getDirectorName() }}</td>
                                     <td>
                                         <span class="badge rounded-pill bg-info text-dark fw-big">
                                             <a class="text-decoration-none text-dark"
-                                                href="{{ route('genre.index') }}">{{ $movie->getGenres() }}</a>
+                                                href="{{ route('genres.index') }}">{{ $movie->getGenres() }}</a>
                                         </span>
                                     </td>
                                     <td>{{ $movie->duration }}''</td>

@@ -22,7 +22,7 @@ Route::middleware('auth')->group(function () {
 Route::resource('movies', MovieController::class)
     ->middleware(['auth', 'verified']);
 
-Route::resource('genre', GenreController::class)
+Route::resource('genres', GenreController::class)
     ->middleware(['auth', 'verified']);
 
 

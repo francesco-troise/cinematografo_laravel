@@ -75,7 +75,7 @@
 
             <!--SECTION ADD GENRE-->
             <section class="col-12 col-lg-6">
-                <a href="" class="text-decoration-none">
+                <a href="{{ route('genres.index') }}" class="text-decoration-none">
                     <div class="card h-100 shadow-sm border-0 rounded-4 hover-lift">
                         <div class="card-header bg-transparent border-0 pt-4 pb-0">
                             <h1 class="h5 mb-0 text-danger d-flex align-items-center gap-2">
