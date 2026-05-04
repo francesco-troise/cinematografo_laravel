@@ -12,10 +12,17 @@ class GenreController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        $genres = Genre::all();
-        return view('genres.all_genres', compact('genres'));
+        $form_genres = Genre::pluck('name', 'id');
+
+        $query = Genre::query();
+        if($request->filled('genre_id')){
+            $query->where('id', $request->genre_id);
+        }
+
+        $genres = $query->get();
+        return view('genres.all_genres', compact('genres', 'form_genres'));
     }
 
     /**

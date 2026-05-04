@@ -3,20 +3,50 @@
 
 @section('content')
     <div class="container py-5">
-        <div class="d-flex align-items-center mb-4">
-            <h1 class="fw-bold text-primary mb-0">Esplora Generi</h1>
+        <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap">
 
-            <a href="{{ route('genres.create') }}"
-                class="btn bg-secondary-subtle text-primary btn-sm shadow-sm d-inline-flex align-items-center border-0 px-3 py-2 fw-bold ms-4">
-                Aggiungi un genere
-                <i class="bi bi-plus-circle-fill ms-2"></i>
-            </a>
-            <a href="{{ route('movies.index') }}"
-                class="btn bg-secondary-subtle text-primary btn-sm shadow-sm d-inline-flex align-items-center border-0 px-3 py-2 fw-bold ms-5">
-                <i class="bi bi-film ms-2"></i>
-                Vai ai film
-            </a>
+            <div class="d-flex align-items-center">
+                <h1 class="fw-bold text-primary mb-0">Esplora Generi</h1>
 
+                <a href="{{ route('genres.create') }}"
+                    class="btn bg-secondary-subtle text-primary btn-sm shadow-sm d-inline-flex align-items-center border-0 px-3 py-2 fw-bold ms-4">
+                    Aggiungi un genere
+                    <i class="bi bi-plus-circle-fill ms-2"></i>
+                </a>
+
+                <a href="{{ route('movies.index') }}"
+                    class="btn bg-secondary-subtle text-primary btn-sm shadow-sm d-inline-flex align-items-center border-0 px-3 py-2 fw-bold ms-3">
+                    <i class="bi bi-film me-2"></i>
+                    Vai ai film
+                </a>
+            </div>
+
+            <form action="{{ route('genres.index') }}" method="GET" class="d-flex align-items-center ms-auto">
+
+                <div class="input-group">
+                    <label class="input-group-text bg-transparent border-end-0 text-muted small" for="find_genre">
+                        Ricerca
+                    </label>
+                    <select name="genre_id" id="find_genre" class="form-select form-select-sm border-start-0"
+                        style="min-width: 180px;">
+                        <option value="" selected>Tutti i generi...</option>
+                        @foreach ($form_genres as $id => $name)
+                            <option value="{{ $id }}">
+                                {{ $name }}
+                            </option>
+                        @endforeach
+                    </select>
+                    <button class="btn btn-primary btn-sm px-3" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+
+                @if (request()->filled('genre_id'))
+                    <a href="{{ route('genres.index') }}" class="btn btn-link btn-sm text-decoration-none ms-2">
+                        Resetta
+                    </a>
+                @endif
+            </form>
         </div>
 
         <div class="row g-4">
