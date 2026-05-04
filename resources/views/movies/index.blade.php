@@ -10,14 +10,15 @@
 
             <div class="d-flex gap-3">
                 <span class="badge rounded-3 bg-secondary-subtle fs-5 p-2 px-3 shadow-sm">
-                    <a class="text-decoration-none text-primary d-flex align-items-center" href="{{ route('genres.index') }}">
+                    <a href="{{ route('genres.index') }}" class="text-decoration-none text-primary d-flex align-items-center">
                         <i class="bi bi-tags-fill me-2"></i>
                         Vai ai generi
                     </a>
                 </span>
 
                 <span class="badge rounded-3 bg-secondary-subtle fs-5 p-2 px-3 shadow-sm">
-                    <a class="text-decoration-none text-primary d-flex align-items-center" href="">
+                    <a href="{{ route('people.index') }}"
+                        class="text-decoration-none text-primary d-flex align-items-center">
                         <i class="bi bi-people-fill me-2"></i>
                         Catalogo attori/registi
                     </a>

@@ -11,6 +11,12 @@
                 Aggiungi un genere
                 <i class="bi bi-plus-circle-fill ms-2"></i>
             </a>
+            <a href="{{ route('movies.index') }}"
+                class="btn bg-secondary-subtle text-primary btn-sm shadow-sm d-inline-flex align-items-center border-0 px-3 py-2 fw-bold ms-5">
+                <i class="bi bi-film ms-2"></i>
+                Vai ai film
+            </a>
+
         </div>
 
         <div class="row g-4">
