@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('name', 150);
             $table->string('last_name', 150);
-            $table->char('gender', 1)->comment('M: Male, F: Female, O: Other, U: Unknown');
-            $table->date('date_of_birth');
-            $table->char('nationality', 2);
+            $table->char('gender', 1)->comment('M: Male, F: Female, O: Other, U: Unknown')->nullable();
+            $table->date('date_of_birth')->nullable();
+            $table->char('nationality', 2)->nullable();
             $table->string('url_image')->nullable();
             $table->timestamps();
         });
