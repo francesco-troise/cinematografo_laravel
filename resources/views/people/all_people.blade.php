@@ -10,6 +10,7 @@
                 class="btn bg-secondary-subtle text-primary btn-sm shadow-sm d-inline-flex align-items-center border-0 px-3 py-2 fw-bold ms-4">
                 <i class="bi bi-film me-2"></i> Vai ai film
             </a>
+            <a href="{{ route('people.create') }}">Aggiungi nuovo Attore/Regista</a>
         </div>
 
         <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
@@ -40,7 +41,8 @@
                                         <i class="bi bi-eye"></i>Dettagli
                                     </a>
                                     <!--Modifica Edit-->
-                                    <a href="#" class="btn btn-outline-warning btn-sm px-2 py-1">
+                                    <a href="{{ route('people.edit', $person) }}"
+                                        class="btn btn-outline-warning btn-sm px-2 py-1">
                                         <i class="bi bi-pencil"></i>Modifica informazioni
                                     </a>
                                 </div>

@@ -4,27 +4,100 @@
 @section('content')
 
     <div class="container py-5">
-        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4">
 
-            <h1 class="display-6 fw-bold text-primary mb-3 mb-md-0">Lista Film</h1>
-
-            <div class="d-flex gap-3">
-                <span class="badge rounded-3 bg-secondary-subtle fs-5 p-2 px-3 shadow-sm">
-                    <a href="{{ route('genres.index') }}" class="text-decoration-none text-primary d-flex align-items-center">
-                        <i class="bi bi-tags-fill me-2"></i>
-                        Vai ai generi
-                    </a>
-                </span>
-
-                <span class="badge rounded-3 bg-secondary-subtle fs-5 p-2 px-3 shadow-sm">
-                    <a href="{{ route('people.index') }}"
-                        class="text-decoration-none text-primary d-flex align-items-center">
-                        <i class="bi bi-people-fill me-2"></i>
-                        Catalogo attori/registi
-                    </a>
-                </span>
+        <div class="d-flex flex-column flex-xl-row justify-content-between align-items-center mb-5 gap-4">
+            <div>
+                <h1 class="display-5 fw-bold text-primary mb-0">
+                    <i class="bi bi-collection-play me-2"></i>Lista Film
+                </h1>
+                <p class="text-muted mb-0">Gestisci e filtra il catalogo completo dei film</p>
             </div>
 
+            <a href="{{ route('movies.create') }}"
+                class="btn bg-secondary-subtle text-primary btn-sm shadow-sm d-inline-flex align-items-center border-0 px-3 py-2 fw-bold ms-3">
+                <i class="bi bi-film me-2"></i>
+                Aggiungi un nuovo film
+            </a>
+
+            <div class="d-flex flex-wrap gap-3 justify-content-center">
+                <a href="{{ route('genres.index') }}"
+                    class="btn btn-white border shadow-sm rounded-pill px-4 py-2 text-primary fw-semibold transition-all">
+                    <i class="bi bi-tags-fill me-2 text-secondary"></i>Vai ai generi
+                </a>
+
+                <a href="{{ route('people.index') }}"
+                    class="btn btn-white border shadow-sm rounded-pill px-4 py-2 text-primary fw-semibold transition-all">
+                    <i class="bi bi-people-fill me-2 text-secondary"></i>Catalogo attori/registi
+                </a>
+            </div>
+        </div>
+
+        <!--Sezione Filtri-->
+        <div class="card shadow-sm border-0 bg-white rounded-4 overflow-hidden">
+            <div class="card-header bg-light border-0 py-3 ps-4">
+                <h5 class="mb-0 fs-6 text-uppercase fw-bold text-muted letter-spacing-1">
+                    <i class="bi bi-sliders me-2"></i>Filtri di Ricerca
+                </h5>
+            </div>
+            <div class="card-body p-4">
+                <form action="{{ route('movies.index') }}" method="GET" class="row g-4 align-items-end">
+
+                    <!--Filtro Titolo-->
+                    <div class="col-lg-4">
+                        <label for="title" class="form-label small fw-bold text-secondary">Titolo Film</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-light border-end-0 text-muted">
+                                <i class="bi bi-search"></i>
+                            </span>
+                            <input type="text" name="title" id="title"
+                                class="form-control border-start-0 bg-light shadow-none" placeholder="Inserisci titolo..."
+                                value="{{ request('title') }}">
+                        </div>
+                    </div>
+
+                    <!--Filtro Genere-->
+                    <div class="col-md-6 col-lg-3">
+                        <label for="genre_id" class="form-label small fw-bold text-secondary">Genere</label>
+                        <select name="genre_id" id="genre_id" class="form-select bg-light border-0 shadow-none py-2">
+                            <option value="">Tutti i generi</option>
+                            @foreach ($genres as $genre)
+                                <option value="{{ $genre->id }}"
+                                    {{ request('genre_id') == $genre->id ? 'selected' : '' }}>
+                                    {{ $genre->name }}
+                                </option>
+                            @endforeach
+                        </select>
+                    </div>
+
+                    <!--Filtro Regist -->
+                    <div class="col-md-6 col-lg-3">
+                        <label for="director_id" class="form-label small fw-bold text-secondary">Regista</label>
+                        <select name="director_id" id="director_id" class="form-select bg-light border-0 shadow-none py-2">
+                            <option value="">Tutti i registi</option>
+                            @foreach ($directors as $director)
+                                <option value="{{ $director->id }}"
+                                    {{ request('director_id') == $director->id ? 'selected' : '' }}>
+                                    {{ $director->name }} {{ $director->last_name }}
+                                </option>
+                            @endforeach
+                        </select>
+                    </div>
+
+
+                    <div class="col-lg-2">
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn btn-primary flex-grow-1 py-2 fw-bold shadow-sm">
+                                Filtra
+                            </button>
+                            <a href="{{ route('movies.index') }}"
+                                class="btn btn-outline-light border text-muted py-2 px-3 shadow-sm" title="Resetta filtri">
+                                <i class="bi bi-arrow-counterclockwise"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
         </div>
     </div>
     <div class="card shadow-sm border-0">

@@ -20,8 +20,13 @@ class Movie extends Model
                     ->withTimestamps();
     }
 
+  public function castMembers()
+    {
+        return $this->hasMany(Cast::class);
+    }
 
     public function getDirector(){
+
         return $this->people->where('pivot.role_id', 1)->first();
     }
 
@@ -34,8 +39,5 @@ class Movie extends Model
       return $this->genres;
     }
 
-    public function castMembers()
-    {
-        return $this->hasMany(Cast::class);
-    }
+
 }

@@ -14,4 +14,10 @@ class Person extends Model
                     ->withPivot('role_id')
                     ->withTimestamps();
     }
+
+    public function roles()
+{
+    return $this->belongsToMany(Role::class, 'cast', 'person_id', 'role_id')
+                ->withTimestamps();
+}
 }

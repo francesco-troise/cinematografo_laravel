@@ -109,6 +109,9 @@ class GenreController extends Controller
      */
     public function destroy(Genre $genre)
     {
+        if ($genre->url_image) {
+        Storage::disk('public')->delete($genre->url_image);
+    }
         $genre->delete();
         return redirect()->route('genres.index');
     }

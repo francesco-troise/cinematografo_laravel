@@ -13,12 +13,14 @@
                     </a>
                 </span>
                 <div class="card shadow">
-                    <!-- CARD HEADER -->
+
                     <div class="card-header bg-dark text-white py-3">
                         <div class="d-flex justify-content-between align-items-center small mb-2 text-uppercase fw-bold">
-                            <span>PEGI {{ $movie->pegi }}</span>
-                            <span>{{ $movie->getDirectorName() }}</span>
-                            <span>{{ $movie->duration }} min</span>
+                            <span>
+                                <a class="text-decoration-none text-white"
+                                    href="{{ route('people.show', $movie->getDirector()) }}">{{ $movie->getDirectorName() }}
+                                </a>
+                            </span>
                             <div>
                                 @foreach ($movie->getGenres() as $genre)
                                     <span class="badge rounded-pill bg-light text-dark mx-1">
@@ -28,13 +30,16 @@
                                     </span>
                                 @endforeach
                             </div>
+                            <span>PEGI {{ $movie->pegi }}</span>
+
+                            <span>{{ $movie->duration }} min</span>
+
                         </div>
                         <h1 class="text-center mb-0 mt-2 h2 fw-bold text-uppercase italic">
                             {{ $movie->title }}
                         </h1>
                     </div>
 
-                    <!-- CARD BODY: Immagine a sinistra, Trama a destra -->
                     <div class="card-body p-4">
                         <div class="row align-items-start">
                             <div class="col-md-5 col-lg-4 text-center">
@@ -51,7 +56,6 @@
                         </div>
                     </div>
 
-                    <!-- CARD FOOTER -->
                     <div class="card-footer bg-light p-4">
                         <h6 class="text-uppercase fw-bold mb-3 small text-secondary border-bottom pb-2">Cast</h6>
                         <ul class="row list-unstyled mb-0">

@@ -42,7 +42,7 @@
     <div class="content py-5">
         <div class="container">
             <div class="row g-4 text-white">
-                <!-- Card Statistica 1 -->
+
                 <div class="col-md-4">
                     <div class="card bg-secondary bg-opacity-10 border-0 rounded-4 p-3 shadow-sm">
                         <div class="card-body">
@@ -52,7 +52,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Card Statistica 2 -->
+
                 <div class="col-md-4">
                     <div class="card bg-secondary bg-opacity-10 border-0 rounded-4 p-3 shadow-sm">
                         <div class="card-body">
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Card Statistica 3 -->
+
                 <div class="col-md-4">
                     <div class="card bg-secondary bg-opacity-10 border-0 rounded-4 p-3 shadow-sm">
                         <div class="card-body">
